@@ -23,8 +23,16 @@ environment variable > sibling-checkout convention (`../azazael`) >
 | `count_derivation` | prose numbers vs artifact JSON/markdown counts | the 120-that-never-was |
 | `board_stale` | duplicate keys, completed-vs-open contradictions | 50-row append-only board |
 
+Full capability, not a defect layer (review correction 2026-10-28): the 4
+native detectors above are the tree's own ports. EVERYTHING else in
+azazael's 49-tool forensic set is reachable through `forensics/home.py` —
+`python -m forensics.home inventory` proves presence against the home
+checkout, `python -m forensics.home run <tool> [args...]` runs any of
+them with exit codes preserved. No copies, no drift: coupled tools run
+against the home, portable tools run identically from anywhere.
 Older siblings already portable (no hardcodes): `claim_guard`,
-`orphan_triage`, `anti_pattern_gate`, `mesh_function_preflight`.
+`orphan_triage`, `mesh_function_preflight`. (NOT `anti_pattern_gate` —
+the sieve proved it imports CORE; it runs via the adapter.)
 Already env-first: `lesson_liveness`, `verify_p9_drill`.
 Known owed extensions (queued, not here): orphan_triage → goal-pin
 checks; claim_guard → JSON count cross-checks.
