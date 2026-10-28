@@ -1,0 +1,18 @@
+{
+  "checks": [
+    {"id": "edges", "file": "01_verified/network_edges_proofed.json",
+     "query": "len(edges)", "expected": 118},
+    {"id": "tally-verified", "file": "01_verified/proof_audit.json",
+     "query": "get(summary.grades.verified)", "expected": 58},
+    {"id": "tally-lead", "file": "01_verified/proof_audit.json",
+     "query": "get(summary.grades.lead)", "expected": 58},
+    {"id": "tally-cut", "file": "01_verified/proof_audit.json",
+     "query": "get(summary.grades.cut)", "expected": 2},
+    {"id": "ledger-rows", "file": "01_verified/edge_proof_ledger.md",
+     "query": "lines(starts='| ', skip_header=1)", "expected": 118}
+  ],
+  "claims": [
+    {"id": "canon-118-declared", "file": "AGENTS.md", "pattern": "118 edges"},
+    {"id": "no-120-canon", "file": "AGENTS.md", "pattern": "120 edges", "absent": true}
+  ]
+}

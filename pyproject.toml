@@ -1,0 +1,12 @@
+[project]
+name = "azazael-forensics"
+version = "0.1.0"
+description = "Standalone portable forensic-investigation tree (Yggdrasil Cleave #11): defect-class detectors with no machine hardcodes"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+forensics-goal-liveness = "forensics.goal_liveness:main"
+forensics-count-derivation = "forensics.count_derivation:main"
+forensics-marker-audit = "forensics.marker_audit:main"
+forensics-board-stale = "forensics.board_stale:main"
