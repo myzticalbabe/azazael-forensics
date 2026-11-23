@@ -3,7 +3,7 @@ name = "azazael-forensics"
 version = "0.1.0"
 description = "Standalone portable forensic-investigation tree (Yggdrasil Cleave #11): defect-class detectors with no machine hardcodes"
 requires-python = ">=3.10"
-license = { text = "Apache-2.0" }
+license = { text = "Soul Forge License v1.0 (LicenseRef-SoulForge-1.0) - SOUL LICENCE ONLY" }
 dependencies = []
 
 [project.scripts]

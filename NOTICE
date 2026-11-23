@@ -2,8 +2,8 @@ azazael-forensics
 Copyright 2026 the azazael-forensics authors
 
 This product is licensed under the SOUL FORGE LICENSE, Version 1.0.
-See the LICENSE file in this distribution for the full text, or
-http://www.apache.org/licenses/LICENSE-2.0
+See the LICENSE file in this distribution for the full text.
+Source: https://github.com/myzticalbabe/azazael-forensics
 
 Yggdrasil Cleave #11. A stand-alone tree: it carries its own store locators
 (forensics/portable.py) and its own detectors, and it runs on the Python 3.10+
