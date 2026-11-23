@@ -1,0 +1,16 @@
+azazael-forensics
+Copyright 2026 the azazael-forensics authors
+
+This product is licensed under the SOUL FORGE LICENSE, Version 1.0.
+See the LICENSE file in this distribution for the full text, or
+http://www.apache.org/licenses/LICENSE-2.0
+
+Yggdrasil Cleave #11. A stand-alone tree: it carries its own store locators
+(forensics/portable.py) and its own detectors, and it runs on the Python 3.10+
+standard library alone. There are no third-party runtime dependencies, so
+there are no third-party notices to carry.
+
+Four detectors ship in this tree. The remaining 48 tools named in
+forensics/home.py are not distributed here: they are resolved from a separate
+azazael checkout named by AZAZAEL_HOME or found at ../azazael, and they are
+covered by that tree's own licence terms, not by this one.

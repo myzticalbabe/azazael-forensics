@@ -4,10 +4,10 @@ CORRECTION (review, operator: "why is it a defect layer?"): the tree was
 framed as a defect-detector layer. Wrong. The assignment is the full
 portable forensic capability — every azazael investigation tool reachable
 from anywhere, via native ports plus `forensics/home.py`, which inventories
-and runs all 49 named home tools with no copies and no drift. Heavy
+and runs all 52 named home tools with no copies and no drift. Heavy
 machinery stays home and RUNS through the adapter; nothing is unreachable.
 
-Import-level sieve of azazael's 49 named forensic tools (`tools/*.py`
+Import-level sieve of azazael's 52 named forensic tools (`tools/*.py`
 matching audit|gate|verify|liveness|fresh|provenance|claim|orphan|mesh|
 lesson|training|compliance|triage|drift|canon|adopt|census|ratchet|sentinel|origin):
 

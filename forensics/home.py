@@ -3,8 +3,12 @@
 
 The tree does not duplicate the home. It REACHES it: this adapter resolves
 the azazael checkout (AZAZAEL_HOME env, else the sibling ../azazael
-convention), inventories all 49 named forensic tools, and runs any of them
+convention), inventories all 52 named forensic tools, and runs any of them
 with arguments passed through and exit codes preserved.
+
+Only 4 of the 52 ship with this tree. The other 48 resolve inside the
+azazael home checkout, so a standalone clone delivers 4 detectors and
+exits 2 on `inventory` until AZAZAEL_HOME (or ../azazael) names a home.
 
 No copies, no drift, no palimpsest: one source of truth (the home tree),
 one calling convention (this module). When the home is absent the adapter

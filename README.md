@@ -24,12 +24,18 @@ environment variable > sibling-checkout convention (`../azazael`) >
 | `board_stale` | duplicate keys, completed-vs-open contradictions | 50-row append-only board |
 
 Full capability, not a defect layer (review correction 2026-10-28): the 4
-native detectors above are the tree's own ports. EVERYTHING else in
-azazael's 49-tool forensic set is reachable through `forensics/home.py` —
+native detectors above are the tree's own ports. The registry names 52
+tools: the 4 native ones ship here, and the other 48 resolve inside the
+azazael home checkout, reachable through `forensics/home.py` —
 `python -m forensics.home inventory` proves presence against the home
 checkout, `python -m forensics.home run <tool> [args...]` runs any of
 them with exit codes preserved. No copies, no drift: coupled tools run
 against the home, portable tools run identically from anywhere.
+
+Stated plainly, because the number is easy to misread: a standalone
+clone of THIS tree delivers the 4 detectors below and nothing else. With
+no home present, `inventory` exits `2` rather than reporting a green over
+the 48 tools it cannot see.
 Older siblings already portable (no hardcodes): `claim_guard`,
 `orphan_triage`, `mesh_function_preflight`. (NOT `anti_pattern_gate` —
 the sieve proved it imports CORE; it runs via the adapter.)
